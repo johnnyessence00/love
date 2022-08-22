@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>inline html and external css</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Building Nav bar of a website on html -->
+<nav>
+    <ul class="topnav" id="dropdownClick">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact-Us">Contact-Us</a></li>
+        <li><a href="#About-Us">About-Us</a></li>
+        <li class="topnav-right"><a href="#SignUp">Sign Up</a></li>
+        <li class="topnav-right"><a href="#SignIn">Sign In</a></li>
+         <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+    <!-- Creating the Form Group on html -->
+    <!-- <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftSide-col"> 
+                    <h1 class="Large">Form Group on Html</h1>
+                    <h1 class="Large">Form Group on Css</h1>
+
+                </div>
+                <form>
+                    <div class="leftSide-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" type="text" 
+                        name="Username" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="inputbox" type="text" 
+                        name="Password" placeholder="Password">
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-6">
+                <div class="rightSide-col">
+                    <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/veXcTkbYVk"
+                     frameborder="0" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+        </div>
+</nav> -->
+    <!-- <h1>Skateboarding is interesting</h1> -->
+
+    <!-- adding a class to an element -->
+    <!-- <div class="square"></div> -->
+    <hr>
+    <!-- to create another class element called id -->
+    <!-- <div id="circle">Hey i'm a circle</div> -->
+    <hr>
+    <!-- effecting css colors and shadows properties in web -->
+    <div class="container">
+    <!-- <h1 style="color: yellow;" id="foo">H1-You are the CSS to my HTML</h1> -->
+    <h2>H2-Anyone skate out there?</h2>
+    <h3>H3-I believe i can fly</h3>
+
+
+<!-- working with borders in html and css -->
+<div>
+    <img src="lion.jpg" class="borderimg" alt="">
+</div>
+<hr>
+
+<!-- Padding and marging in Css -->
+<div>
+    <img src="lion.jpg" class="borderimg" alt="">
+</div>
+<div>
+    <button type="button" class="padding">I am the Best Button</button>
+</div>
+<hr>
+<!-- Rows and Columns in Css -->
+<div class="row">
+<div class="col-3">
+    <img src="lion.jpg" class="borderimg" alt="">
+</div>
+<div class="col-6">
+    <img src="lion.jpg" class="borderimg" alt="">
+</div>
+<div class="col-3">
+    <img src="lion.jpg" class="borderimg" alt="">
+</div>
+</div>
+<div class="row">
+<div class="col-2">
+    <img src="lion.jpg" class="borderimg" alt="">
+</div>
+<div class="col-7">
+    <img src="lion.jpg" class="borderimg" alt="">
+</div>
+<div class="col-4">
+    <img src="lion.jpg" class="borderimg" alt="">
+</div>
+    </div>
+
+<!-- html combinators -->
+<!-- <ul>
+    <li>I love to play football</li>
+    <li>My favourite game</li>
+    <ol>
+        <li>360 flips</li>
+        <li>Backside Nose Blunts</li>
+    </ol>
+    <li>Skate till you can't walk</li>
+</ul> -->
+    </div>
+<hr>
+<h1>H1- I should build a website</h1>
+<h2>H2-I hope the rope doesn't break</h2>
+<hr>
+<!-- Text styling and formatting in HTML -->
+<!-- <div class="formatting">
+    <div><b>I am so bold</b></div>
+    <div><i>I am leaning over....</i></div>
+    <div><em>I am so EMPHASIZED</em></div>
+    <div><STRONG>I am so strong</STRONG></div>
+    <div><del>Please don't delete me</del></div>
+    <div><mark>MARK MY WORDS</mark></div>
+</div>
+<a href="#">Click me Now</a> -->
+<hr>
+<!-- Responsive html image and css -->
+<div>
+    <img src="/images/white babe laugh.svg" class="borderimg" alt="">
+</div>
+
+<hr>
+<script>
+    function dropdownMenu(){
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "topnav"){
+            x.className +=" responsive";
+            // change topnav to topnav.responsive
+        } 
+        else{
+            x.className="topnav";
+        }
+    }
+</script>
+
+
+  
+</body>
+</html>

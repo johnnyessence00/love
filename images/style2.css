@@ -1,0 +1,374 @@
+/* external css with adding of class selector and element ID */
+/* body{
+    background-color: #cc99ff;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: auto;
+}
+#circle{
+    color: darkred;
+    font-size: 40px;
+} */
+
+
+
+
+/* css backgrounds and borders */
+/* body{
+    /* background-image: url(zebra\ logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} */
+
+/* effecting css colors and shadows properties in web */
+/* 
+.container{
+    /* background-color: darkslateblue;
+    background: linear-gradient(to left,#00ccff,  #b3f0ff);
+    box-shadow: 3px 5px 3px; 
+} */
+
+/* h2{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+h3{
+    color: rgb(0, 204 255);
+    text-shadow: 1px 1px 3px darkblue;
+
+} */
+ /* border images*/
+ /* .borderimg{
+    border-right: 5px dashed red;
+ } */
+
+ /* css combinators in child selector*/
+ ul li{
+    color: white;
+    font-size: 20px;
+ }
+
+ ul>li{
+    color: yellow;
+ }
+
+ /* Specificity in css */
+ /* #foo{
+    color: red;
+ } */
+ /* [id="foo"]{
+    color: cyan;
+ } */
+
+ /* .container h1{
+    color: red;
+ }
+ html body div.container h1#foo{
+     color: red;
+ } */
+/* body h1{
+    color: green;
+} */
+/* div h1{
+    color: green;
+}  */
+/* h1{
+    color: green !important;
+}  */
+/* grouping in css */
+h1, h2, h3, .class, #id{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    line-height: 2rem;
+    font-family: sans-serif;
+}
+
+/* Text styling and formatting in css*/
+html{
+    font-family: times serif sans-serif;
+}
+body{
+    background-color: #444;
+    /* text-align: center; */
+}
+
+h1 h2, h3{
+    color: #ffffff;
+    line-height: 1rem;
+    font-style: italic;
+    font-family: "lato";
+}    
+
+h2{
+    font: size 30px; 
+    font-style: normal;
+    font-family: "lato" serif sans-serif;
+}
+.formatting{
+    font-size: 25px;
+    line-height: 2em;
+    color: #ffffff;
+    font-family: "lato" serif sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    word-spacing: 10px;
+    text-transform:uppercase ;
+}
+/* Responsive html image and css */
+
+/* img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    opacity: 1;
+    display: flex;
+    margin: auto;
+} */
+/* .borderimg{
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ddd;
+    padding: 5px;
+} */
+
+/* Padding and marging in Css */
+.borderimg{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+button{
+    color: #ffffff;
+    background-color: red;
+    border-radius: 12px;
+    border: none;
+    font-size: 25px;
+    padding: 10px 20px 40px 60px;
+}
+
+/* img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    opacity: 1;
+    margin-bottom: 60px;
+} */
+/* Rows and Columns in Css */
+.row{
+    display: flex;
+    width: 100%;
+}
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.col-1{width:8.33%;}
+.col-1{width:16.33;}
+.col-1{width:25%;}
+.col-1{width:33.33%;}
+.col-1{width:41.66%;}
+.col-1{width:50%;}
+.col-1{width:58.33%;}
+.col-1{width:66.66%;}
+.col-1{width:75%;}
+.col-1{width:83.33%;}
+.col-1{width:91.66%;}
+.col-1{width:100%;}
+
+*{
+    box-sizing: border-box;
+}
+
+[class="col-"]{
+    border: 2px solid red;
+    padding: 15px;
+    float: left;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    opacity: 1;
+    margin: auto;
+    display: block;
+}
+/* Building Nav bar of a website on css */
+/* Defaults */
+nav,header,footer{
+    display: block;
+ }
+ body{
+    line-height: 1;
+    margin: 0;
+ }
+
+
+/* Building Nav bar of a website on css */
+/* Nav bar */
+
+ nav{
+    width: 100%;
+    margin: 0;
+ }
+ nav ul{
+    background-color:blueviolet;
+    overflow: hidden;
+    margin: 0;
+    padding: 27px;
+ }
+ ul.topnav li{
+    list-style: none;
+    float: left;
+    display: flex;
+ }
+ ul.topnav li.topnav-right{
+    float: right;
+ }
+ ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: white;
+ }
+ ul.topnav li a:hover{
+    background-color: #0808ff;
+    color: #ffffff;
+
+ }
+ /* Making the Navbar Mobile Responsive_Part 1 on css */
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+ /* Mobile and Media query */
+ @media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    /* }
+    .col-6{
+        width: 20%;
+        margin: 0;
+    }
+    div.leftSide-col,
+    div.rightSide-col{
+        margin: 15px;
+    }
+    input[type="text"]{
+        width: 350px;
+
+    } */
+    /* .videoContainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    } */
+ }
+
+/* Creating the Form Group on css */
+/* .container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    margin-bottom: 4%;
+}
+.row{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1{width:8.33%;}
+.col-1{width:16.33;}
+.col-1{width:25%;}
+.col-1{width:33.33%;}
+.col-1{width:41.66%;}
+.col-1{width:50%;}
+.col-1{width:58.33%;}
+.col-1{width:66.66%;}
+.col-1{width:75%;}
+.col-1{width:83.33%;}
+.col-1{width:91.66%;}
+.col-1{width:100%;} */
+
+/* customs styles in form group on css */
+/* #section-1-gradient{
+    background: #076dff;
+    background: -webkit-linear-gradient(#076dff,#65A5FF);
+    background: -o-linear-gradient(#076dff,#65A5FF);
+    background: -moz-linear-gradient(#076dff,#65A5FF);
+    background: linear-gradient(#076dff,#65A5FF);
+} */
+
+/* div.leftSide-col{
+    margin-left: 30%;
+   
+}
+
+div.rightSide-col{
+    margin-left: 15%;
+
+}
+
+h1.Large{
+    color: #ffffff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+form h2{
+    color: #ffffff;
+    
+}
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+} */

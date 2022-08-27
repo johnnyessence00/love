@@ -283,8 +283,8 @@ ul.topnav li.dropdownIcon{
     ul.topnav.responsive li a {
         display: block;
         text-align: left;
-    /* }
-    .col-6{
+ }
+    /* .col-6{
         width: 20%;
         margin: 0;
     }
@@ -295,7 +295,7 @@ ul.topnav li.dropdownIcon{
     input[type="text"]{
         width: 350px;
 
-    } */
+    } */ */
     /* .videoContainer iframe{
         position: relative;
         width: 100%;
